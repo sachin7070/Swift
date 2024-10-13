@@ -1,8 +1,6 @@
-# iOS App Development with Swift 5
+# iOS App Development with Swift 
 
-This repository covers key topics in Swift 5 for iOS app development, including definitions, syntax, and examples for each concept. This guide is designed for beginners to help you understand the fundamentals of Swift programming.
 
----
 
 ## 1. Getting Started
 
@@ -25,67 +23,68 @@ Xcode is the official integrated development environment (IDE) for Swift and iOS
   var mutableVariable = 42  // Mutable variable
   let constantVariable = 100  // Immutable constant
 Example:
-swift
-Copy code
+```swift
 var age = 30  // Variable that can change
 let name = "John"  // Constant that cannot change
-Type Safety and Inference
+```
+### Type Safety and Inference
 Swift ensures that variables are used consistently by enforcing type safety. It also uses type inference to automatically determine the type of a variable when it is assigned a value.
 
 Example:
-swift
-Copy code
+```swift
 var inferredInt = 10  // Inferred as Int
 let explicitDouble: Double = 42.0  // Explicitly declared as Double
-Logging and Commenting
+```
+### Logging and Commenting
 Logging is done using the print() function, while comments help document the code for better readability.
 
 Syntax:
-swift
-Copy code
+```swift
 print("Hello, Swift!")  // Output: Hello, Swift!
 
 // This is a single-line comment
 
 /* This is a multi-line
    comment */
-Swift Operators
+```
+### Swift Operators
 Operators perform operations on variables and values.
 
-Arithmetic Operators (e.g., +, -, *, /):
+## Arithmetic Operators (e.g., +, -, *, /):
 
-swift
-Copy code
+```swift
 let sum = 5 + 3  // Addition
 let difference = 10 - 3  // Subtraction
-Comparison Operators (e.g., ==, >, <):
+```
+## Comparison Operators (e.g., ==, >, <):
 
-swift
-Copy code
+```swift
 let isEqual = (5 == 5)  // true
 let isGreater = (7 > 5)  // true
-Working with Strings
+```
+
+### Working with Strings
 Strings are used to represent text.
 
 String Concatenation:
 
-swift
-Copy code
+``` swift
 let greeting = "Hello, " + "World!"  // Combining strings
+```
 String Interpolation:
 
-swift
-Copy code
+```swift
 let name = "Swift"
 print("Welcome to \(name)")  // Output: Welcome to Swift
+```
 Type Conversions
 Swift allows you to convert one data type to another using initializers.
 
 Example:
-swift
-Copy code
+```swift
 let number = 42
 let numberAsString = String(number)  // Converting Int to String
+```
 Booleans and Logical Operators
 Booleans represent true or false values, and logical operators allow you to combine or invert these values.
 
