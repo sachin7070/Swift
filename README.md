@@ -47,23 +47,23 @@ print("Hello, Swift!")  // Output: Hello, Swift!
 /* This is a multi-line
    comment */
 ```
-### Swift Operators
+## Swift Operators
 Operators perform operations on variables and values.
 
-## Arithmetic Operators (e.g., +, -, *, /):
+### Arithmetic Operators (e.g., +, -, *, /):
 
 ```swift
 let sum = 5 + 3  // Addition
 let difference = 10 - 3  // Subtraction
 ```
-## Comparison Operators (e.g., ==, >, <):
+### Comparison Operators (e.g., ==, >, <):
 
 ```swift
 let isEqual = (5 == 5)  // true
 let isGreater = (7 > 5)  // true
 ```
 
-### Working with Strings
+## Working with Strings
 Strings are used to represent text.
 
 String Concatenation:
@@ -77,7 +77,7 @@ String Interpolation:
 let name = "Swift"
 print("Welcome to \(name)")  // Output: Welcome to Swift
 ```
-Type Conversions
+## Type Conversions
 Swift allows you to convert one data type to another using initializers.
 
 Example:
@@ -85,53 +85,49 @@ Example:
 let number = 42
 let numberAsString = String(number)  // Converting Int to String
 ```
-Booleans and Logical Operators
+### Booleans and Logical Operators
 Booleans represent true or false values, and logical operators allow you to combine or invert these values.
 
-Logical Operators:
-swift
-Copy code
+### Logical Operators:
+```swift
 let isSuccess = true && false  // false
 let isEither = true || false  // true
 let isNotTrue = !true  // false
-Optionals
+```
+### Optionals
 Optionals are used to indicate that a variable may or may not hold a value. They are declared with a ?.
 
 Syntax:
-
-swift
-Copy code
+```swift
 var optionalString: String? = "Hello"
 var noValue: String? = nil  // No value
+```
 Unwrapping Optionals:
-
-swift
-Copy code
+```swift
 if let unwrappedString = optionalString {
     print(unwrappedString)  // Safely using the unwrapped value
 }
-3. Working with Collections
-Swift Arrays
+```
+## 3. Working with Collections
+### Swift Arrays:
 Arrays are ordered collections of data.
 
 Syntax:
-
-swift
-Copy code
+```swift
 var numbers = [1, 2, 3]  // Creating an array
 Example:
-
-swift
-Copy code
+```
+```swift
 var fruits = ["Apple", "Banana", "Cherry"]  // Array of strings
 fruits.append("Orange")  // Adding "Orange" to the array
-Core Array Methods
+```
+### Core Array Methods
 Example:
-swift
-Copy code
+```swift
 fruits.remove(at: 1)  // Removes "Banana"
 print(fruits.count)  // Output: Number of elements in array
-Swift Dictionaries
+```
+### Swift Dictionaries
 Dictionaries store key-value pairs.
 
 Syntax:
@@ -141,47 +137,44 @@ Copy code
 var dictionary: [String: Int] = ["John": 25, "Jane": 30]
 Example:
 
-swift
-Copy code
+```swift
 var inventory = ["Apple": 10, "Orange": 20]
 inventory["Banana"] = 15  // Adding a new key-value pair
 print(inventory["Apple"]!)  // Accessing the value for "Apple"
-Core Dictionary Methods
+```
+### Core Dictionary Methods
 Example:
-swift
-Copy code
+```swift
 inventory.removeValue(forKey: "Orange")  // Removing "Orange"
 print(inventory.count)  // Output: Number of key-value pairs
-Working with Sets
+```
+### Working with Sets
 Sets store unique values without any specific order.
 
 Syntax:
-
-swift
-Copy code
+```swift
 var setOfNumbers: Set = [1, 2, 3, 4, 5]
+```
 Example:
-
-swift
-Copy code
+```swift
 var colors: Set = ["Red", "Green", "Blue"]
 colors.insert("Yellow")  // Adding "Yellow"
 colors.remove("Red")  // Removing "Red"
-Swift Tuples
+```
+### Swift Tuples
 Tuples group multiple values into a single compound value.
 
 Syntax:
-
-swift
-Copy code
+```swift
 let person = ("John", 25)  // A tuple with a name and age
+```
 Example:
 
-swift
-Copy code
+```swift
 let person = (name: "John", age: 25)
 print(person.name)  // Accessing name from the tuple
-4. Application Control Flow
+```
+## 4. Application Control Flow
 The if Statement
 The if statement executes code based on a condition.
 
@@ -235,18 +228,17 @@ While Loops
 while loops repeat a block of code while a condition is true.
 
 Syntax:
-swift
-Copy code
+```swift
 while condition {
     // Code to execute
 }
-The Switch Statement
+```
+### The Switch Statement
 The switch statement matches a value against a set of cases.
 
 Syntax:
 
-swift
-Copy code
+```swift
 switch value {
 case option1:
     // Code for option1
@@ -255,10 +247,10 @@ case option2:
 default:
     // Code for default case
 }
+```
 Example:
 
-swift
-Copy code
+```swift
 let character = "a"
 switch character {
 case "a", "e", "i", "o", "u":
@@ -266,31 +258,30 @@ case "a", "e", "i", "o", "u":
 default:
     print("Consonant")
 }
-5. The Wide World of Functions
-Basic Functions
+```
+## 5. The Wide World of Functions
+### Basic Functions
 Functions are reusable blocks of code that perform a specific task.
 
 Syntax:
-
-swift
-Copy code
+```swift
 func functionName(parameterName: ParameterType) -> ReturnType {
     // Function body
 }
+```
 Example:
 
-swift
-Copy code
+```swift
 func greet(name: String) -> String {
     return "Hello, \(name)"
 }
 print(greet(name: "Swift"))  // Output: Hello, Swift
-Overloading Functions
+```
+### Overloading Functions
 You can define multiple functions with the same name, differing by the parameters they accept.
 
 Example:
-swift
-Copy code
+```swift
 func add(a: Int, b: Int) -> Int {
     return a + b
 }
@@ -298,3 +289,4 @@ func add(a: Int, b: Int) -> Int {
 func add(a: Double, b: Double) -> Double {
     return a + b
 }
+```
