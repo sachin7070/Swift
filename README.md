@@ -180,51 +180,48 @@ The if statement executes code based on a condition.
 
 Syntax:
 
-swift
-Copy code
+```swift
 if condition {
     // Code to execute if condition is true
 } else {
     // Code to execute if condition is false
 }
+```
 Example:
-
-swift
-Copy code
+```swift
 let age = 20
 if age >= 18 {
     print("Adult")
 } else {
     print("Minor")
 }
-Unwrapping Optionals
+```
+### Unwrapping Optionals
 Optional binding safely accesses the value of an optional.
 
 Syntax:
-swift
-Copy code
+```swift
 if let unwrapped = optionalVariable {
     // Use unwrapped value
 }
-For-in Loops
+```
+### For-in Loops
 for-in loops iterate over collections or ranges.
 
 Syntax:
-
-swift
-Copy code
+```swift
 for item in collection {
     // Code to execute for each item
 }
+```
 Example:
-
-swift
-Copy code
+```swift
 let numbers = [1, 2, 3, 4]
 for number in numbers {
     print(number)  // Output each number
 }
-While Loops
+```
+### While Loops
 while loops repeat a block of code while a condition is true.
 
 Syntax:
